@@ -1,0 +1,1 @@
+This plugin helps you to write a generator's template quickly.

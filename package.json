@@ -1,0 +1,25 @@
+{
+    "name": "flutter-snippets-for-generator-tool",
+    "displayName": "flutter snippets for generator tool",
+    "description": "This plugin helps you to write a generator's template quickly.",
+    "version": "0.0.1",
+    "publisher": "tbm98",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tbm98/flutter-snippets-for-generator-tool-vscode"
+    },
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "dart",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

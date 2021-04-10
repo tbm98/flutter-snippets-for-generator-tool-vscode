@@ -1,0 +1,90 @@
+{
+    "Create freezed template": {
+        "prefix": "freezed",
+        "body": [
+            "import 'package:flutter/foundation.dart';",
+            "import 'package:freezed_annotation/freezed_annotation.dart';",
+            "",
+            "part '$TM_FILENAME_BASE.freezed.dart';",
+            "part '$TM_FILENAME_BASE.g.dart';",
+            "",
+            "@freezed",
+            "abstract class ${ClassName} with _$${ClassName} {",
+            "\t@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)",
+            "\tconst factory ${ClassName}({$Params}) = _${ClassName};",
+            "",
+            "\t$code",
+            "",
+            "\tfactory ${ClassName}.fromJson(Map<String, dynamic> json) =>",
+            "\t\t_$${ClassName}FromJson(json);",
+            "}"
+        ]
+    },
+    "Create freezed template without import": {
+        "prefix": "freezedWithoutImport",
+        "body": [
+          "@freezed",
+          "abstract class ${ClassName} with _$${ClassName} {",
+          "\t@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)",
+          "\tconst factory ${ClassName}({$Params}) = _${ClassName};",
+          "",
+          "\t$code",
+          "",
+          "\tfactory ${ClassName}.fromJson(Map<String, dynamic> json) =>",
+          "\t\t_$${ClassName}FromJson(json);",
+          "}"
+        ],
+        "description": "Create freezed template without import"
+      },
+      "Create fromJson/toJson templatee": {
+        "prefix": "json",
+        "body": [
+          "factory ${Classname}.fromJson(Map<String, dynamic> json) {",
+          "\treturn _$${Classname}FromJson(json);",
+          "}",
+          "",
+          "Map<String, dynamic> toJson() => _$${Classname}ToJson(this);"
+        ],
+        "description": "Create fromJson/toJson templatee"
+      },
+      "Create JsonSerializable template": {
+        "prefix": "jsonSerializable",
+        "body": [
+          "import 'package:json_annotation/json_annotation.dart';",
+          "",
+          "part '$TM_FILENAME_BASE.g.dart';",
+          "",
+          "@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)",
+          "class ${Classname} {",
+          "\t${Classname}();",
+          "",
+          "\t$code",
+          "",
+          "\tfactory ${Classname}.fromJson(Map<String, dynamic> json) {",
+          "\t\treturn _$${Classname}FromJson(json);",
+          "\t}",
+          "",
+          "\tMap<String, dynamic> toJson() => _$${Classname}ToJson(this);",
+          "}"
+        ],
+        "description": "Create JsonSerializable template"
+      },
+      "Create JsonSerializable without import": {
+        "prefix": "jsonSerializableWithoutImport",
+        "body": [
+          "@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)",
+          "class ${Classname} {",
+          "\t${Classname}();",
+          "",
+          "\t$code",
+          "",
+          "\tfactory ${Classname}.fromJson(Map<String, dynamic> json) {",
+          "\t\treturn _$${Classname}FromJson(json);",
+          "\t}",
+          "",
+          "\tMap<String, dynamic> toJson() => _$${Classname}ToJson(this);",
+          "}"
+        ],
+        "description": "Create JsonSerializable without import"
+      }
+}
