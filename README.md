@@ -1,1 +1,1 @@
-This plugin helps you to write a generator's template quickly.
+# Flutter snippets for generator tool [![.github/workflows/publish.yml](https://github.com/tbm98/flutter-snippets-for-generator-tool-vscode/actions/workflows/publish.yml/badge.svg)](https://github.com/tbm98/flutter-snippets-for-generator-tool-vscode/actions/workflows/publish.yml)
