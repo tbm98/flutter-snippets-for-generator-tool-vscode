@@ -1,1 +1,1 @@
-# Flutter snippets for generator tool [![.github/workflows/publish.yml](https://github.com/tbm98/flutter-snippets-for-generator-tool-vscode/actions/workflows/publish.yml/badge.svg)](https://github.com/tbm98/flutter-snippets-for-generator-tool-vscode/actions/workflows/publish.yml)
+# Flutter snippets for generator tool
