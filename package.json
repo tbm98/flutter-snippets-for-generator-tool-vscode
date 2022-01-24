@@ -3,7 +3,7 @@
     "displayName": "flutter snippets for generator tool",
     "description": "This plugin helps you to write a generator's template quickly.",
     "icon": "pluginIcon.png",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "tbm98",
     "author": {
         "url": "https://tbm98.dev",
