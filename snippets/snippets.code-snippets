@@ -9,7 +9,7 @@
             "part '$TM_FILENAME_BASE.g.dart';",
             "",
             "@freezed",
-            "abstract class ${ClassName} with _$${ClassName} {",
+            "class ${ClassName} with _$${ClassName} {",
             "\t@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)",
             "\tconst factory ${ClassName}({$Params}) = _${ClassName};",
             "",
@@ -24,7 +24,7 @@
         "prefix": "freezedWithoutImport",
         "body": [
           "@freezed",
-          "abstract class ${ClassName} with _$${ClassName} {",
+          "class ${ClassName} with _$${ClassName} {",
           "\t@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)",
           "\tconst factory ${ClassName}({$Params}) = _${ClassName};",
           "",
